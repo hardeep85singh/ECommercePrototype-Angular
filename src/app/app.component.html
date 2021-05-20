@@ -1,0 +1,22 @@
+
+
+<div class="inventory-app">
+  <app-header> </app-header>
+
+<div>
+  <div class="item">
+    <div class="ui icon input">
+      <input name="searchProducts" type="text" id="searchProducts" #newSearchProduct placeholder="Search Products...">
+      <i class="search link icon" (click)="searchProducts(newSearchProduct)"></i>
+    </div>
+  </div>
+</div>
+
+  <product-list
+    [productList] = "products"
+    (onProductSelected)="productWasSelected($event)">
+  </product-list>
+
+</div>
+
+<!-- <router-outlet></router-outlet> -->
