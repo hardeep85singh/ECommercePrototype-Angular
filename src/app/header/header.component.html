@@ -1,12 +1,32 @@
-<div class="ui secondary  menu">
-    <a href="/home " class="active item" routerLink="home">
+<!-- <div class="ui secondary  menu">
+    <a href="/home " class="ui item" routerLink="home">
+        E-Commerse Prototype
+    </a>
+
+    <a href="/home " class="ui item" routerLink="home">
         Home
     </a>
 
-    <!-- <div class="right menu">
+    <div class="right menu">
         
-        <a class="ui item">
-            Logout
+        <a href="/addProduct" class="ui item" routerLink="addProduct">
+            Add Product
         </a>
-    </div> -->
-</div>
+    </div>
+</div> -->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="/home" class="navbar-brand">E-Commerse Prototype</a>
+
+    <ul class="navbar-nav mr-auto" routerLinkActive="active">
+      <li class="nav-item">
+        <a href="/home" class="nav-link" routerLink="home">Home </a>
+      </li>
+    </ul>
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/addProduct" class="nav-link" routerLink="addProduct">Add Product</a>
+      </li>
+    
+    </ul>

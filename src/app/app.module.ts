@@ -10,7 +10,9 @@ import { ProductRowComponent } from './product-row/product-row.component';
 import { ProductImageComponent } from './product-image/product-image.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { ProductPriceComponent } from './product-price/product-price.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,15 @@ import { FormsModule } from '@angular/forms';
     ProductRowComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
-    ProductPriceComponent
+    ProductPriceComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

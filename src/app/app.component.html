@@ -1,22 +1,23 @@
-
-
-<div class="inventory-app">
-  <app-header> </app-header>
+<app-header> </app-header>
 
 <div>
   <div class="item">
     <div class="ui icon input">
       <input name="searchProducts" type="text" id="searchProducts" #newSearchProduct placeholder="Search Products...">
-      <i class="search link icon" (click)="searchProducts(newSearchProduct)"></i>
+      <i class="search link icon"></i>
+      <!-- (click)="searchProducts(product)" -->
+    </div>
+    <div class="ui grid posts">
+      <ul>
+        <li *ngFor="let product of products"></li>
+      </ul>
     </div>
   </div>
 </div>
 
-  <product-list
+<!-- <product-list
     [productList] = "products"
     (onProductSelected)="productWasSelected($event)">
-  </product-list>
+  </product-list> -->
 
-</div>
-
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>
